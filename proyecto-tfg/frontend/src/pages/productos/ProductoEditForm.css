@@ -1,0 +1,79 @@
+.producto-edit-form {
+  background: var(--code-bg);
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  max-width: 400px;
+
+  /* ⭐ Centrado igual que los demás formularios */
+  margin: 0 auto 30px auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.producto-edit-form h3 {
+  margin: 0 0 10px;
+  color: var(--text-h);
+  font-weight: 600;
+  text-align: center;
+}
+
+.producto-edit-form input[type="text"],
+.producto-edit-form input[type="number"] {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  font-size: 16px;
+  color: var(--text-h);
+}
+
+.producto-edit-form input:focus {
+  outline: 2px solid var(--accent);
+  border-color: var(--accent);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-h);
+  font-size: 16px;
+}
+
+.edit-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.guardar {
+  padding: 12px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  flex: 1;
+  transition: opacity 0.2s;
+}
+
+.cancelar {
+  padding: 12px;
+  background: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  flex: 1;
+  transition: opacity 0.2s;
+}
+
+.guardar:hover,
+.cancelar:hover {
+  opacity: 0.85;
+}

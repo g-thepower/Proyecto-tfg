@@ -1,0 +1,92 @@
+.facturas-container {
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.facturas-titulo {
+  text-align: center;
+  margin-bottom: 25px;
+  color: var(--text-h);
+}
+
+.btn.crear-factura {
+  background: var(--accent);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  margin-bottom: 20px;
+  transition: opacity 0.2s;
+}
+
+.btn.crear-factura:hover {
+  opacity: 0.85;
+}
+
+.tabla-wrapper {
+  overflow-x: auto;
+}
+
+.facturas-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.facturas-tabla th {
+  background: var(--code-bg);
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-h);
+  border-bottom: 1px solid var(--border);
+}
+
+.facturas-tabla td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.facturas-tabla tr:hover {
+  background: var(--accent-bg);
+}
+
+.acciones {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: opacity 0.2s;
+}
+
+.btn.ver {
+  background: var(--accent);
+  color: white;
+}
+
+.btn.eliminar {
+  background: #d9534f;
+  color: white;
+}
+
+.btn.pdf {
+  background: #6c757d;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}

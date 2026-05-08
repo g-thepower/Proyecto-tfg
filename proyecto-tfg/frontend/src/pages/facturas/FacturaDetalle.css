@@ -1,0 +1,94 @@
+.factura-container {
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.factura-titulo {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--text-h);
+}
+
+.factura-card {
+  background: var(--code-bg);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.factura-card h3 {
+  margin-top: 20px;
+  color: var(--text-h);
+}
+
+.tabla-wrapper {
+  overflow-x: auto;
+  margin: 15px 0;
+}
+
+.factura-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.factura-tabla th {
+  background: var(--code-bg);
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-h);
+  border-bottom: 1px solid var(--border);
+}
+
+.factura-tabla td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.factura-tabla tr:hover {
+  background: var(--accent-bg);
+}
+
+.factura-botones {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.btn {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  transition: opacity 0.2s;
+}
+
+.btn.volver {
+  background: #6c757d;
+  color: white;
+}
+
+.btn.pdf {
+  background: var(--accent);
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.cargando {
+  padding: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: var(--text);
+}

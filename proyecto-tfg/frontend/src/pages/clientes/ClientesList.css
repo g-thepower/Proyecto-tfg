@@ -1,0 +1,75 @@
+.clientes-container {
+  padding: 40px;
+  text-align: left;
+}
+
+.clientes-titulo {
+  margin: 30px 0 30px 0;
+  color: var(--text-h);
+  text-align: center;
+}
+
+.clientes-container h2 {
+  margin-bottom: 20px;
+  color: var(--text-h);
+}
+
+.tabla-wrapper {
+  overflow-x: auto;
+}
+
+.clientes-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.clientes-tabla th {
+  background: var(--code-bg);
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-h);
+  border-bottom: 1px solid var(--border);
+}
+
+.clientes-tabla td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.clientes-tabla tr:hover {
+  background: var(--accent-bg);
+}
+
+.acciones {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: opacity 0.2s;
+}
+
+.btn.editar {
+  background: var(--accent);
+  color: white;
+}
+
+.btn.eliminar {
+  background: #d9534f;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}

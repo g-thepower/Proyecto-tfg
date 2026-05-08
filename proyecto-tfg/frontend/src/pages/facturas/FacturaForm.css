@@ -1,0 +1,95 @@
+.factura-form-container {
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.factura-form-titulo {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--text-h);
+}
+
+.factura-form-card {
+  background: var(--code-bg);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.campo-label {
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.campo-select,
+.campo-input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  font-size: 16px;
+  color: var(--text-h);
+}
+
+.campo-select:focus,
+.campo-input:focus {
+  outline: 2px solid var(--accent);
+  border-color: var(--accent);
+}
+
+.lineas-titulo {
+  margin-top: 10px;
+  color: var(--text-h);
+}
+
+.linea-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  transition: opacity 0.2s;
+}
+
+.btn.agregar {
+  background: var(--accent);
+  color: white;
+  width: fit-content;
+}
+
+.btn.eliminar {
+  background: #d9534f;
+  color: white;
+}
+
+.btn.volver {
+  background: #6c757d;
+  color: white;
+}
+
+.btn.crear {
+  background: var(--accent);
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.acciones-finales {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 20px;
+}
