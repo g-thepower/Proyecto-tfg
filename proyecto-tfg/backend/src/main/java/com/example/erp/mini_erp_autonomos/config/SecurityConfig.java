@@ -30,7 +30,16 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()))
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/auth/**").permitAll()
+                        // Endpoints públicos
+                        .requestMatchers(
+                                "/api/auth/**",
+                                "/api/facturas/**",        // permitir descargar PDF
+                                "/v3/api-docs/**",         // swagger
+                                "/swagger-ui/**",          // swagger UI
+                                "/swagger-ui.html"         // swagger UI
+                        ).permitAll()
+
+                        // Todo lo demás requiere login
                         .anyRequest().authenticated()
                 )
                 .userDetailsService(usuarioDetailsService)
